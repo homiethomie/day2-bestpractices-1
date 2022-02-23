@@ -8,6 +8,8 @@ X = []
 
 for i in range(N):
     X.append([random.randint(0,100) for r in range(N)])
+    print(X)
+    break
 
 # Nx(N+1) matrix
 Y = []
