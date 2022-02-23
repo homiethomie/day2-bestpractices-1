@@ -5,6 +5,6 @@ class Fish:
         self.members = ['Piranha', 'Stonefish']
 
     def printMembers(self):
-        print('Printing dangerous members of the Fish class')
+        print('Printing members of the Fish class')
         for member in self.members:
             print('\t%s ' % member)
