@@ -7,13 +7,16 @@ N = 250
 X = []
 
 for i in range(N):
-    X.append([random.randint(0,100) for r in range(N)])
+    #X.append([random.random(0,100) for r in range(N)])
+    #changed random.randint to random.random, seems like a faster method to generate random integers between 0 and 100
+    X.append([int(100* random.random()) for r in range(N)])
 
 # Nx(N+1) matrix
 Y = []
 
 for i in range(N):
-    Y.append([random.randint(0,100) for r in range(N+1)])
+    # same here
+    Y.append([int(100* random.random()) for r in range(N+1)])
 
 # result is Nx(N+1)
 result = []
